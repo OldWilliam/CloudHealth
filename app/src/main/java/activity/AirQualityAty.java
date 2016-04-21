@@ -80,10 +80,12 @@ public class AirQualityAty extends BaseActivity {
         super.onActivityResult(requestCode, resultCode, data);
         switch (requestCode) {
             case BaseActivity.TIME_CHOOSE:
-                String date = data.getExtras().getString("date");
-                byte[] dataPac = mFileMan.getByteFile(MConfig.FenChen, date);
-                for (int i = 0; i < dataPac.length; i++) {
-                    Log.d("number", dataPac[i] + "");
+                if (resultCode == TimeChooseAty.TIME_RETURN) {
+                    String date = data.getExtras().getString("date");
+                    byte[] dataPac = mFileMan.getByteFile(MConfig.FenChen, date);
+                    for (int i = 0; i < dataPac.length; i++) {
+                        Log.d("number", dataPac[i] + "");
+                    }
                 }
                 break;
             default:

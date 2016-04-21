@@ -109,12 +109,16 @@ public class XinDianAty extends BaseActivity {
         super.onActivityResult(requestCode, resultCode, data);
         switch (requestCode) {
             case BaseActivity.TIME_CHOOSE:
-                String date = data.getExtras().getString("date");
-                try {
-                    new mThread(new SimpleDateFormat("yyyy-MM-dd").parse(date)).start();
-                } catch (ParseException e) {
-                    e.printStackTrace();
+                if (resultCode == TimeChooseAty.TIME_RETURN) {
+                    String date = data.getExtras().getString("date");
+                    try {
+                        new mThread(new SimpleDateFormat("yyyy-MM-dd").parse(date)).start();
+                    } catch (ParseException e) {
+                        e.printStackTrace();
+                    }
                 }
+
+
                 break;
             default:
                 break;
