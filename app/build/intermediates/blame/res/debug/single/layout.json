@@ -1,0 +1,90 @@
+[
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_health.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\fragment_health.xml"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\item.xml"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\map.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\map.xml"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\general_use.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\general_use.xml"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\data_air.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\data_air.xml"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\bluetooth_item.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\bluetooth_item.xml"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_map.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\fragment_map.xml"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\trend_chart.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\trend_chart.xml"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_setting.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\fragment_setting.xml"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\map_pop_layout.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\map_pop_layout.xml"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\data_xuetang.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\data_xuetang.xml"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\setting.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\setting.xml"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_health.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\activity_health.xml"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_health_other.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\activity_health_other.xml"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\data_xueyang.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\data_xueyang.xml"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\date_select.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\date_select.xml"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\blu_deviceslist.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\blu_deviceslist.xml"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\setting_aboutus.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\setting_aboutus.xml"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_health_item.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\custom_health_item.xml"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\login.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\login.xml"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\data_xindian.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\data_xindian.xml"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\data_body_temp.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\data_body_temp.xml"
+    }
+]

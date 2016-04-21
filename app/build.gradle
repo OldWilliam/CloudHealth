@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'key'
+            keyPassword 'weixin123'
+            storeFile file('F:/key.jks')
+            storePassword 'weixin123'
+        }
+    }
+    compileSdkVersion 15
+    buildToolsVersion "23.0.2"
+    defaultConfig {
+        applicationId "com.example.health_community"
+        minSdkVersion 15
+        targetSdkVersion 15
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile files('libs/afinal_0.5.1_bin.jar')
+    compile files('libs/baidumapapi_v2_1_3.jar')
+    compile files('libs/locSDK_3.1.jar')
+    compile files('libs/mpandroidchartlibrary-2-1-5.jar')
+    //    compile 'com.android.support:app'
+    //    compile 'com.android.support:appcompat-v7:20.0.0'
+    compile 'com.android.support:support-v4:22.0.0'
+    compile 'cn.aigestudio.datepicker:DatePicker:2.2.0'
+
+}

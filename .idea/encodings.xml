@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/activity/AboutUs.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/activity/HealthActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/activity/LocateAty.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/activity/LoginAty.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/activity/SettingAty.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/activity/TimeChooseAty.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/activity/TrendChartAty.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/net/Login.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/net/NetConn.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/util/FileManager.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/util/TransCoord.java" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="health_item" >
+        <item>血氧</item>
+        <item>心电</item>
+        <item>血糖</item>
+        <item>体温</item>
+        <item>空气质量</item>
+        <item>脑电(待定)</item>
+        <item>血压（待定)</item>
+    </string-array>
+</resources>

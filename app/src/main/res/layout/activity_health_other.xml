@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#0A0A0A"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/ib_bluteeth_statu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/blueteeth" />
+
+        <TextView
+            android:id="@+id/tv_bluteeth_statu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0A0A0A"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="3dp"
+            android:text="未连接"
+            android:textColor="#F7F7F7" />
+
+        <TextView
+            android:id="@+id/tv_upload_statu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0A0A0A"
+            android:gravity="right|center_vertical"
+            android:paddingRight="3dp"
+            android:text="未同步"
+            android:textColor="#F7F7F7" />
+
+        <ImageButton
+            android:id="@+id/ib_sync_data"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/load" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8">
+
+        <adapter.MyViewPager
+            android:id="@+id/viewpager_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </adapter.MyViewPager>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:paddingTop="6dp">
+
+        <RadioGroup
+            android:id="@+id/rg_navigate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/nav_health"
+                style="@style/NavBtStyle"
+                android:drawableTop="@drawable/tab_health_selector"
+                android:text="@string/str_health" />
+
+            <RadioButton
+                android:id="@+id/nav_locate"
+                style="@style/NavBtStyle"
+                android:drawableTop="@drawable/tab_locate_selector"
+                android:text="@string/str_locate" />
+
+            <RadioButton
+                android:id="@+id/nav_setting"
+                style="@style/NavBtStyle"
+                android:drawableTop="@drawable/tab_setting_test"
+                android:text="@string/str_setting" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+</LinearLayout>
