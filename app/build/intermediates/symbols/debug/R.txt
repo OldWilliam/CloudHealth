@@ -193,13 +193,14 @@ int id bd_tem_tv 0x7f0a001c
 int id bd_temp_chart_bt 0x7f0a001e
 int id bmapView 0x7f0a002a
 int id bottomTab 0x7f0a003e
-int id chart 0x7f0a0016
+int id bt 0x7f0a0041
+int id chart 0x7f0a0017
 int id dataTypeLv 0x7f0a0004
 int id date_cancelBt 0x7f0a0028
 int id date_confirmBt 0x7f0a0027
 int id date_picker 0x7f0a0026
 int id deviceLv 0x7f0a0010
-int id dust_level 0x7f0a0017
+int id dust_level 0x7f0a0016
 int id dust_number 0x7f0a0015
 int id dust_title 0x7f0a0014
 int id generalLayout1 0x7f0a0005
@@ -222,6 +223,7 @@ int id map_request2 0x7f0a002c
 int id nav_health 0x7f0a000d
 int id nav_locate 0x7f0a000e
 int id nav_setting 0x7f0a000f
+int id paraItem 0x7f0a0043
 int id password 0x7f0a0038
 int id rememberPass 0x7f0a0039
 int id request 0x7f0a003b
@@ -232,7 +234,7 @@ int id sheshidu 0x7f0a001d
 int id statuBtn 0x7f0a0001
 int id sync_to_web 0x7f0a0003
 int id thermometer 0x7f0a001a
-int id time 0x7f0a0041
+int id time 0x7f0a0042
 int id title 0x7f0a0000
 int id titleTv 0x7f0a0002
 int id title_bar 0x7f0a0006
@@ -272,6 +274,7 @@ int layout setting 0x7f030013
 int layout setting_aboutus 0x7f030014
 int layout trend_chart 0x7f030015
 int menu main 0x7f090000
+int menu phy_para 0x7f090001
 int string action_settings 0x7f080000
 int string app_name 0x7f080001
 int string cancle 0x7f080002
@@ -301,9 +304,10 @@ int string str_setting 0x7f080019
 int string time 0x7f08001a
 int string upload 0x7f08001b
 int string xuetang_init_measure_number 0x7f08001c
-int string xueyang_measure_result 0x7f08001d
-int string xueyang_normal_range 0x7f08001e
-int string xueyang_normal_range_number 0x7f08001f
+int string xueyang 0x7f08001d
+int string xueyang_measure_result 0x7f08001e
+int string xueyang_normal_range 0x7f08001f
+int string xueyang_normal_range_number 0x7f080020
 int style AppBaseTheme 0x7f040000
 int style AppTheme 0x7f040001
 int style NavBtStyle 0x7f040002

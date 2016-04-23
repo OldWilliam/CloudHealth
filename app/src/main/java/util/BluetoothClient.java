@@ -116,7 +116,7 @@ public class BluetoothClient {
 		setState(STATE_NONE);
 		Message msg = mHandler.obtainMessage(HealthActivity.MESSAGE_TOAST);
 		Bundle bundle = new Bundle();
-		bundle.putString(HealthActivity.TOAST, "�޷����ӵ��豸");
+		bundle.putString(HealthActivity.TOAST, "无法连接到设备");
 		msg.setData(bundle);
 		mHandler.sendMessage(msg);
 	}
@@ -126,7 +126,7 @@ public class BluetoothClient {
 		// Send a failure message back to the Activity
 		Message msg = mHandler.obtainMessage(HealthActivity.MESSAGE_TOAST);
 		Bundle bundle = new Bundle();
-		bundle.putString(HealthActivity.TOAST, "���Ӷ�ʧ");
+		bundle.putString(HealthActivity.TOAST, "连接丢失");
 		msg.setData(bundle);
 		mHandler.sendMessage(msg);
 	}
@@ -203,10 +203,10 @@ public class BluetoothClient {
 			byte dataSum = 0;
 			int dataTyp = 0;
 
-			//����߳�ʲôʱ��ͣ����
+			//这个线程什么时候停啊！
 			while (true) {
 				try {
-					//֡ͷ1
+					//帧头1
 					if (dataPos == 0) {
 						b = (byte) mmInStream.read();	
 						if (b == (byte)0xDC) {
@@ -216,10 +216,10 @@ public class BluetoothClient {
 						else {
 							dataPos = 0;
 							dataSum = 0;
-							Log.d("֡ͷ1", "ʧ��");
+							Log.d("帧头1", "失败");
 						}
 					}
-					//֡ͷ2
+					//帧头2
 					else if(dataPos == 1){
 						b = (byte) mmInStream.read();
 						if (b == (byte)0xBA) {
@@ -229,10 +229,10 @@ public class BluetoothClient {
 						else {
 							dataPos = 0;
 							dataSum = 0;
-							Log.d("֡ͷ2", "ʧ��");
+							Log.d("帧头2", "失败");
 						}
 					}
-					//�������λ
+					//数据类型位
 					else if (dataPos == 2) {
 						b = (byte) mmInStream.read();
 						switch (b) {
@@ -267,16 +267,16 @@ public class BluetoothClient {
 						default:
 							dataPos = 0;
 							dataSum = 0;
-							Log.d("��ȡ�������", "δ֪����");
+							Log.d("获取数据类型", "未知类型");
 							break;
 						}
 						if (dataPos != 0) {
 							dataPos = 3;
 							dataSum += b;
-							Log.d("��ȡ�������", dataTyp+"");
+							Log.d("获取数据类型", dataTyp+"");
 						}
 					}
-					//����λ ˫�ֽ�
+					//长度位 双字节
 					else if (dataPos == 3) {
 						int highLen = mmInStream.read();
 						int lowLen = mmInStream.read();
@@ -285,23 +285,22 @@ public class BluetoothClient {
 						dataSum += (byte)highLen;
 						dataSum += (byte)lowLen;
 					}
-					//��ʵ���.
-					
+					//真实数据.
 					else if(dataPos == 4){
 						validDat = new byte[dataLen];
 						int revLen = mmInStream.read(validDat);
-						//���ܵ�����ݳ�����ԭ������  ����
+						//接受到的数据长度与原长不符  丢弃
 						if (revLen != dataLen) {
 							dataPos = 0;
 							dataSum = 0;
 							dataLen = 0;
-							Log.d("������ݳ���", "����");
+							Log.d("检验数据长度", "不符");
 						}
 						else {
 							dataPos = 5;
 							for (int i = 0; i < validDat.length; i++) {
 								dataSum += validDat[i];
-								Log.d("��ʵ���", validDat[i]+"");
+								Log.d("真实数据", validDat[i]+"");
 							}
 						}
 					}
@@ -310,12 +309,12 @@ public class BluetoothClient {
 						WriteFileThread writeTofile = new WriteFileThread(dataTyp, validDat);
 						writeTofile.start();
 						if (dataSum == preSum) {
-							Log.d("У���", "�ɹ�");
+							Log.d("校验和", "成功");
 						}
 						else {
-							Log.d("У���", "ʧ��");
-							Log.d("Ԥ��У���", preSum+"");
-							Log.d("����У���", dataSum+"");
+							Log.d("校验和", "失败");
+							Log.d("预制校验和", preSum+"");
+							Log.d("算术校验和", dataSum+"");
 							dataPos = 0;
 							dataLen = 0;
 							dataSum = 0;
@@ -334,7 +333,7 @@ public class BluetoothClient {
 				mHandler.obtainMessage(HealthActivity.MESSAGE_WRITE, -1, -1, buffer)
 				.sendToTarget();
 			} catch (IOException e) {
-				//
+
 			}
 		}
 

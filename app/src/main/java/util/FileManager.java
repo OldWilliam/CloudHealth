@@ -10,8 +10,6 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import util.MConfig;
-
 import android.content.Context;
 import android.util.Log;
 
@@ -31,20 +29,20 @@ public class FileManager {
 
     public FileManager(Context context) {
         this.context = context;
-        dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        dateFormat = new SimpleDateFormat("yyyy-M-dd");
     }
 
 
-    //�ѽ��ܵ����ֽ�����洢  	�涨�ļ���Ϊ<�������+ʱ��>
+    //不用filePath因为openFileOutput的默认路径就是/data/data/<package name>/files/
     public synchronized void saveByteFile(int dataType, byte[] buffer) {
-        Log.d("����", getStringName(dataType));
+        Log.d("存入", getFileName(dataType));
         if (dataType == MConfig.XueYang && buffer.length > 1) {
             saveByteFile(MConfig.XueYang, new byte[]{buffer[0]});
             saveByteFile(MConfig.MaiBo, new byte[]{buffer[1]});
             saveByteFile(MConfig.GuanZhuanZhiShu, new byte[]{buffer[2], buffer[3]});
         }
         FileOutputStream fos = null;
-        String fileName = getStringName(dataType);
+        String fileName = getFileName(dataType);
         String date = dateFormat.format(new Date());
         File pendingFile = new File(filePath + fileName + date);
         //		int fileNum = 1;
@@ -54,7 +52,7 @@ public class FileManager {
         //		}
         try {
             fos = context.openFileOutput(pendingFile.getName(), Context.MODE_APPEND);
-            //д��
+            //写入
             fos.write(buffer);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -66,21 +64,21 @@ public class FileManager {
     public byte[] getByteFile(int fileType, String date) {
         Date date2 = null;
         try {
-            date2 = new SimpleDateFormat("yyyy-MM-dd").parse(date);
+            date2 = new SimpleDateFormat("yyyy-M-dd").parse(date);
         } catch (ParseException e) {
             e.printStackTrace();
         }
         return getByteFile(fileType, date2);
     }
 
-    //�Ѹ�����ݶ����ֽ�����
+    //把各个数据读入字节数组
     public byte[] getByteFile(int fileType, Date date) {
-        Log.d("��ȡ", getStringName(fileType));
+        Log.d("读取", getFileName(fileType));
         byte[] b = new byte[getLen(fileType)];
-        File pendingFile = new File(filePath + getStringName(fileType) + dateFormat.format(date));
+        File pendingFile = new File(filePath + getFileName(fileType) + dateFormat.format(date));
         FileInputStream fis = null;
         try {
-            //�ж��Ƿ���ڴ��ļ�
+            //判断是否存在此文件
             if (pendingFile.exists()) {
                 fis = context.openFileInput(pendingFile.getName());
                 fis.read(b);
@@ -93,7 +91,7 @@ public class FileManager {
         return b;
     }
 
-    //��װ��ݰ�
+    //判断是否存在此文件
     public void assemblePac(Date date) {
         byte[] pac = new byte[DATA_PACKAGE_LEN];
         byte[] head = new byte[10];
@@ -115,11 +113,11 @@ public class FileManager {
         System.arraycopy(b5, 0, pac, b4.length, b5.length);
         System.arraycopy(b6, 0, pac, b5.length, b6.length);
         saveByteFile(0, pac);
-        Log.d("��װ���", "�ɹ�");
+        Log.d("组装结果", "成功");
     }
 
     public byte[] getPackage(Date date) {
-        File file = new File(filePath + getStringName(0) + dateFormat.format(date));
+        File file = new File(filePath + getFileName(0) + dateFormat.format(date));
         if (!file.exists()) {
             assemblePac(date);
         }
@@ -163,7 +161,7 @@ public class FileManager {
         return len;
     }
 
-    public String getStringName(int fileType) {
+    public String getFileName(int fileType) {
         String strName = null;
         switch (fileType) {
             case 0:
@@ -176,7 +174,7 @@ public class FileManager {
                 strName = "XinDian";
                 break;
             case 3:
-                strName = "XueTang"; //ò����һ���ļ�
+                strName = "XueTang"; //貌似另一个文件
                 break;
             case 4:
                 strName = "TiWen";
@@ -185,10 +183,10 @@ public class FileManager {
                 strName = "FenChen";
                 break;
             case 6:
-                strName = "NaoDian"; //��
+                strName = "NaoDian";//待定
                 break;
             case 7:
-                strName = "XueYa";  //��
+                strName = "XueYa";  //待定
                 break;
             case 8:
                 strName = "MaiBo";

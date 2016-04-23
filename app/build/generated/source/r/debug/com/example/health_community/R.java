@@ -214,13 +214,14 @@ public final class R {
         public static final int bd_temp_chart_bt=0x7f0a001e;
         public static final int bmapView=0x7f0a002a;
         public static final int bottomTab=0x7f0a003e;
-        public static final int chart=0x7f0a0016;
+        public static final int bt=0x7f0a0041;
+        public static final int chart=0x7f0a0017;
         public static final int dataTypeLv=0x7f0a0004;
         public static final int date_cancelBt=0x7f0a0028;
         public static final int date_confirmBt=0x7f0a0027;
         public static final int date_picker=0x7f0a0026;
         public static final int deviceLv=0x7f0a0010;
-        public static final int dust_level=0x7f0a0017;
+        public static final int dust_level=0x7f0a0016;
         public static final int dust_number=0x7f0a0015;
         public static final int dust_title=0x7f0a0014;
         public static final int generalLayout1=0x7f0a0005;
@@ -243,6 +244,7 @@ public final class R {
         public static final int nav_health=0x7f0a000d;
         public static final int nav_locate=0x7f0a000e;
         public static final int nav_setting=0x7f0a000f;
+        public static final int paraItem=0x7f0a0043;
         public static final int password=0x7f0a0038;
         public static final int rememberPass=0x7f0a0039;
         public static final int request=0x7f0a003b;
@@ -253,7 +255,7 @@ public final class R {
         public static final int statuBtn=0x7f0a0001;
         public static final int sync_to_web=0x7f0a0003;
         public static final int thermometer=0x7f0a001a;
-        public static final int time=0x7f0a0041;
+        public static final int time=0x7f0a0042;
         public static final int title=0x7f0a0000;
         public static final int titleTv=0x7f0a0002;
         public static final int title_bar=0x7f0a0006;
@@ -297,6 +299,7 @@ public final class R {
     }
     public static final class menu {
         public static final int main=0x7f090000;
+        public static final int phy_para=0x7f090001;
     }
     public static final class string {
         public static final int action_settings=0x7f080000;
@@ -328,9 +331,10 @@ public final class R {
         public static final int time=0x7f08001a;
         public static final int upload=0x7f08001b;
         public static final int xuetang_init_measure_number=0x7f08001c;
-        public static final int xueyang_measure_result=0x7f08001d;
-        public static final int xueyang_normal_range=0x7f08001e;
-        public static final int xueyang_normal_range_number=0x7f08001f;
+        public static final int xueyang=0x7f08001d;
+        public static final int xueyang_measure_result=0x7f08001e;
+        public static final int xueyang_normal_range=0x7f08001f;
+        public static final int xueyang_normal_range_number=0x7f080020;
     }
     public static final class style {
         /**  API 11 theme customizations can go here. 

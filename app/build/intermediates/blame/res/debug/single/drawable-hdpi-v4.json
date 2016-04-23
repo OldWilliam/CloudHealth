@@ -12,12 +12,12 @@
         "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\drawable-hdpi\\navi_map_gps_locked.png"
     },
     {
-        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tab_health.png",
-        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\drawable-hdpi\\tab_health.png"
-    },
-    {
         "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\a5.png",
         "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\drawable-hdpi\\a5.png"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tab_health.png",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\drawable-hdpi\\tab_health.png"
     },
     {
         "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\upload.png",
@@ -40,20 +40,20 @@
         "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\drawable-hdpi\\tab_setting2.png"
     },
     {
-        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\sns_shoot_location_pressed.png",
-        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\drawable-hdpi\\sns_shoot_location_pressed.png"
-    },
-    {
         "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\map.PNG",
         "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\drawable-hdpi\\map.PNG"
     },
     {
-        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\load.png",
-        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\drawable-hdpi\\load.png"
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\sns_shoot_location_pressed.png",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\drawable-hdpi\\sns_shoot_location_pressed.png"
     },
     {
         "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\a1.png",
         "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\drawable-hdpi\\a1.png"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\load.png",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\drawable-hdpi\\load.png"
     },
     {
         "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\location_arrows.png",
@@ -84,12 +84,12 @@
         "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\drawable-hdpi\\upload2.png"
     },
     {
-        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\a6.png",
-        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\drawable-hdpi\\a6.png"
-    },
-    {
         "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\custom_loc.png",
         "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\drawable-hdpi\\custom_loc.png"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\a6.png",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\drawable-hdpi\\a6.png"
     },
     {
         "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tab_health2.png",

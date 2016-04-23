@@ -1824,14 +1824,7 @@
                     "endOffset": 6940
                 },
                 "from": {
-                    "file": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 36,
-                        "startColumn": 4,
-                        "startOffset": 1619,
-                        "endColumn": 37,
-                        "endOffset": 1652
-                    }
+                    "file": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
@@ -1855,14 +1848,7 @@
                     "endOffset": 7024
                 },
                 "from": {
-                    "file": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 37,
-                        "startColumn": 4,
-                        "startOffset": 1657,
-                        "endColumn": 38,
-                        "endOffset": 1691
-                    }
+                    "file": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
@@ -2158,20 +2144,27 @@
                     "startLine": 188,
                     "startColumn": 4,
                     "startOffset": 8218,
-                    "endColumn": 55,
-                    "endOffset": 8269
+                    "endColumn": 38,
+                    "endOffset": 8252
                 },
                 "from": {
-                    "file": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 4,
+                        "startOffset": 1696,
+                        "endColumn": 38,
+                        "endOffset": 1730
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 189,
                     "startColumn": 4,
-                    "startOffset": 8274,
-                    "endColumn": 53,
-                    "endOffset": 8323
+                    "startOffset": 8257,
+                    "endColumn": 55,
+                    "endOffset": 8308
                 },
                 "from": {
                     "file": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\values\\strings.xml"
@@ -2181,9 +2174,9 @@
                 "to": {
                     "startLine": 190,
                     "startColumn": 4,
-                    "startOffset": 8328,
-                    "endColumn": 64,
-                    "endOffset": 8388
+                    "startOffset": 8313,
+                    "endColumn": 53,
+                    "endOffset": 8362
                 },
                 "from": {
                     "file": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\values\\strings.xml"
@@ -2193,10 +2186,22 @@
                 "to": {
                     "startLine": 191,
                     "startColumn": 4,
-                    "startOffset": 8393,
-                    "endLine": 197,
+                    "startOffset": 8367,
+                    "endColumn": 64,
+                    "endOffset": 8427
+                },
+                "from": {
+                    "file": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 192,
+                    "startColumn": 4,
+                    "startOffset": 8432,
+                    "endLine": 198,
                     "endColumn": 12,
-                    "endOffset": 8679
+                    "endOffset": 8718
                 },
                 "from": {
                     "file": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\values\\styles.xml"
@@ -2204,12 +2209,12 @@
             },
             {
                 "to": {
-                    "startLine": 198,
+                    "startLine": 199,
                     "startColumn": 4,
-                    "startOffset": 8684,
-                    "endLine": 201,
+                    "startOffset": 8723,
+                    "endLine": 202,
                     "endColumn": 12,
-                    "endOffset": 8840
+                    "endOffset": 8879
                 },
                 "from": {
                     "file": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\values\\styles.xml"
@@ -2217,12 +2222,12 @@
             },
             {
                 "to": {
-                    "startLine": 202,
+                    "startLine": 203,
                     "startColumn": 4,
-                    "startOffset": 8845,
-                    "endLine": 211,
+                    "startOffset": 8884,
+                    "endLine": 212,
                     "endColumn": 12,
-                    "endOffset": 9341
+                    "endOffset": 9380
                 },
                 "from": {
                     "file": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\values\\styles.xml"

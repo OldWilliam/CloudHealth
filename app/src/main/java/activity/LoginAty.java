@@ -39,7 +39,7 @@ public class LoginAty extends Activity {
 //		oldBtn = (Button) findViewById(R.id.oldBtn);
 
 		rememberPass = (CheckBox) findViewById(R.id.rememberPass);
-		// sharedPreferences�����get���� ��һ����Ϊ �� �ڶ���Ϊ û���ҵ���Ӧ�ļ�ʱҪ���ص�ֵ
+		// sharedPreferences对象的get方法 第一参数为 键 第二个为 没有找到相应的键时要返回的值
 		boolean isRmember = spre.getBoolean("remember_password", false);
 		if (isRmember) {
 			String account = spre.getString("account", "");
@@ -50,7 +50,7 @@ public class LoginAty extends Activity {
 		loginBt.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-//				Log.d("LoginAty", "�ѵ����¼��ť");
+//				Log.d("LoginAty", "已点击登录按钮");
 //				afterClick();
 //				finish();
 				startActivity(new Intent(LoginAty.this, HealthActivity2.class));
@@ -74,7 +74,7 @@ public class LoginAty extends Activity {
 	}
 
 	private void afterClick() {
-		final ProgressDialog pd = ProgressDialog.show(LoginAty.this, "��¼��","");
+		final ProgressDialog pd = ProgressDialog.show(LoginAty.this, "登录中","");
 		final String account = accountEt.getText().toString();
 		final String password = passwordEt.getText().toString();
 
@@ -104,16 +104,16 @@ public class LoginAty extends Activity {
 				pd.dismiss();
 				switch (code) {
 				case -1:
-					showToast("�����쳣��������������");
+					showToast("连接异常，请检查网络连接");
 					break;
 				case 1:
-					showToast("������ݴ��󣬷������������");
+					showToast("返回数据错误，服务器发生错误");
 					break;
 				case 2:
-					showToast("�ʺŻ��������");
+					showToast("帐号或密码错误");
 					break;
 				case 3:
-//					showToast("�������");
+//					showToast("密码错误");
 					break;
 				}
 			}

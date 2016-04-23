@@ -3,42 +3,45 @@
     android:layout_height="fill_parent"
     android:background="#EDEDED">
 
-    <TextView
-        android:id="@+id/dust_title"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:text="@string/fenchen"
-        android:textColor="#FFD700"
-        android:textSize="25sp" />
+        android:id="@+id/dust_title">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fenchen"
+            android:textColor="#FFD700"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单位"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+
 
 
     <TextView
         android:id="@+id/dust_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/dust_title"
+        android:layout_below="@id/dust_title"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:text="@string/initialNum"
         android:textSize="50sp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/dust_number"
-        android:layout_alignTop="@id/dust_number"
-        android:layout_toRightOf="@id/dust_number"
-        android:gravity="center_vertical"
-        android:text="单位"
-        android:textSize="20sp"
-        android:textStyle="bold|italic" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/chart"
         android:layout_below="@id/dust_number"
         android:layout_marginTop="80dp"
         android:orientation="vertical">

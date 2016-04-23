@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/paraItem"
+        android:icon="@drawable/ic_launcher"
+        android:actionProviderClass="view.ChartMenuProvider"
+        android:showAsAction="always|withText" />
+</menu>

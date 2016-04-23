@@ -1,17 +1,16 @@
 
 package activity;
 
-import java.util.Calendar;
-
-import com.example.health_community.R;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+
+import com.example.health_community.R;
+
+import java.util.Calendar;
 
 import cn.aigestudio.datepicker.cons.DPMode;
 import cn.aigestudio.datepicker.views.DatePicker;

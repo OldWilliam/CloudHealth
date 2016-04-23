@@ -78,6 +78,7 @@ public class XueYangAty extends BaseActivity {
         switch (v.getId()) {
             case R.id.xueyang_chart_bt:
                 Intent i = new Intent(XueYangAty.this, TrendChartAty.class);
+                i.putExtra("datatype", MConfig.XueYang);
                 startActivity(i);
                 break;
             default:

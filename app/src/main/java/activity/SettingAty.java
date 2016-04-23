@@ -35,10 +35,10 @@ public class SettingAty extends Activity{
 					int position, long id) {
 				switch (position) {
 				case 0:
-					showToast("���ڿ����������ڴ�");
+					showToast("正在开发，敬请期待");
 					break;
 				case 1:
-					showToast("���ڿ����������ڴ�");
+					showToast("正在开发，敬请期待");
 					break;
 				case 2:
 					startActivity(new Intent(SettingAty.this, AboutUs.class));

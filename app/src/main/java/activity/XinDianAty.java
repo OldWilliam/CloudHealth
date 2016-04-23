@@ -125,7 +125,7 @@ public class XinDianAty extends BaseActivity {
         }
     }
 
-    //����ʱ�����ѡȡ���
+    //接受时间参数，选取数据
     class mThread extends Thread {
         Date date;
 
@@ -140,33 +140,32 @@ public class XinDianAty extends BaseActivity {
 
         @Override
         public void run() {
-            //�õ�ָ�����ڵ���ݰ�
+            //得到指定日期的数据包
             dataPac = mFileMan.getByteFile(MConfig.XinDian, date);
             for (int i = 0; i < dataPac.length; i++) {
                 //				Log.d("xindian", dataPac[i]+"");
-                //�Ը�����У���ΪԪ���Ϊ�޷������
+                //对负数进行，因为元数据为无符号类型
                 if (dataPac[i] < 0) {
                     dataPac[i] = (byte) (dataPac[i] + 256);
                 }
             }
-            //����
             Canvas canvas;
-            //����
             Paint paint = new Paint();
+            Path mPath = new Path();
+
             paint.setColor(Color.BLUE);
             paint.setStrokeWidth(3);
             paint.setPathEffect(new CornerPathEffect(10));
             paint.setStyle(Style.STROKE);
-            //·��
-            Path mPath = new Path();
+            //移到零点
             mPath.moveTo(0, 0);
-            //����±�
+            //数据下标
             int p = 0;
-            //�ĵ�����һ���Ĵ���
+            //心电走完一屏的次数
             int pc = 0;
-            //�����־���ԣ��ĵ�������Ȼ��Ϊ�Ͱ�λ��߰�λ�����ǵͰ�λ����ݵ�Ӱ����Ժ��ԣ���������
+            //心电的数据虽然分为低八位与高八位，但是低八位对数据的影响可以忽略
             while (isRunning) {
-                mPath.lineTo(p * 10 + 10, dataPac[pc * 100 + p] + dataPac[pc * 100 + p + 1] + 150);//��һ�٣���Ϊ������le������
+                mPath.lineTo(p * 10 + 10, dataPac[pc * 100 + p] + dataPac[pc * 100 + p + 1] + 150);//加一百，因为看不到le。。。
                 canvas = mHolder.lockCanvas(new Rect(10, 0, p * 10 + 10, 750));
                 canvas.drawPath(mPath, paint);
                 mHolder.unlockCanvasAndPost(canvas);
@@ -195,12 +194,12 @@ public class XinDianAty extends BaseActivity {
         //		Log.d("yLenth", "" + yLenth);
         Canvas canvas = mHolder.lockCanvas();
         canvas.drawColor(Color.parseColor("#EEEEEE"));
-        //���ƿ�
+        //绘制框
         paint.setColor(Color.BLUE);
         paint.setStrokeWidth(5.0f);
         paint.setStyle(Style.STROKE);
         canvas.drawRect(10, 0, xLenth - 10, yLenth - 10, paint);
-        //���߻���
+        //竖线绘制
         paint.setColor(Color.RED);
         paint.setStrokeWidth(1.0f);
         int currentX = 0;
@@ -208,7 +207,7 @@ public class XinDianAty extends BaseActivity {
             currentX = i * xScale;
             canvas.drawLine(currentX, yLenth - 12.5f, currentX, 2.5f, paint);
         }
-        //���߻���
+        //横线绘制
         float currentY = 0;
         for (int j = 1; currentY < yLenth - 20; j++) {
             currentY = j * yScale + 2.5f;
@@ -216,13 +215,13 @@ public class XinDianAty extends BaseActivity {
         }
 
         mHolder.unlockCanvasAndPost(canvas);
-        mHolder.lockCanvas(new Rect(0, 0, 0, 0));//�־û�����������
+        mHolder.lockCanvas(new Rect(0, 0, 0, 0));//持久化，！！！！
         mHolder.unlockCanvasAndPost(canvas);
     }
 
     @Override
     protected void onResume() {
-        // ����Ϊ����
+        // 设置为横屏
 //		if (getRequestedOrientation() != ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE) {
 //			setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 //		}

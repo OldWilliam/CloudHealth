@@ -41,7 +41,7 @@ public class Geocoding {
 			
 			@Override
 			public void onFail(int code) {
-				Log.d("����λ�ý���ʧ��", "û�д����緵�����");
+				Log.d("地理位置解码失败", "没有从网络返回数据");
 			}
 		});
 	}

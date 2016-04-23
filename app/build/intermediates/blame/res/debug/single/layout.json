@@ -12,12 +12,12 @@
         "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\map.xml"
     },
     {
-        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\general_use.xml",
-        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\general_use.xml"
-    },
-    {
         "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\data_air.xml",
         "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\data_air.xml"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\general_use.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\general_use.xml"
     },
     {
         "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\bluetooth_item.xml",
@@ -32,16 +32,16 @@
         "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\trend_chart.xml"
     },
     {
-        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_setting.xml",
-        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\fragment_setting.xml"
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\data_xuetang.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\data_xuetang.xml"
     },
     {
         "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\map_pop_layout.xml",
         "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\map_pop_layout.xml"
     },
     {
-        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\data_xuetang.xml",
-        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\data_xuetang.xml"
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_setting.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\layout\\fragment_setting.xml"
     },
     {
         "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\debug\\layout\\setting.xml",

@@ -186,6 +186,7 @@
     <string name="time">日期</string>
     <string name="upload">上传</string>
     <string name="xuetang_init_measure_number">血氧：0</string>
+    <string name="xueyang">血氧</string>
     <string name="xueyang_measure_result">测量结果</string>
     <string name="xueyang_normal_range">正常范围</string>
     <string name="xueyang_normal_range_number">96%-100%</string>

@@ -57,6 +57,7 @@ public class XueTangAty extends BaseActivity {
         switch (v.getId()) {
             case R.id.xuetang_chart_bt:
                 Intent i = new Intent(XueTangAty.this, TrendChartAty.class);
+                i.putExtra("datatype", MConfig.XueTang);
                 startActivity(i);
                 break;
             default:

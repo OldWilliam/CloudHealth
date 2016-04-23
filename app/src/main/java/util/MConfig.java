@@ -8,8 +8,8 @@ public class MConfig {
 	
 	public static final String KEY_USERNAME = "username";
 	public static final String KEY_PASSWORD = "password";
-	
-	
+
+	public static final int PACKAGE = 0;
 	public static final int XueYang = 1;
 	public static final int XinDian = 2;
 	public static final int XueTang = 3;

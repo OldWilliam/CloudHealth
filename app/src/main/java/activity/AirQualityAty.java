@@ -67,7 +67,7 @@ public class AirQualityAty extends BaseActivity {
         switch (v.getId()) {
             case R.id.aq_chart:
                 Intent i = new Intent(AirQualityAty.this, TrendChartAty.class);
-                i.putExtra("dataType", MConfig.FenChen);
+                i.putExtra("datatype", MConfig.FenChen);
                 startActivity(i);
                 break;
             default:

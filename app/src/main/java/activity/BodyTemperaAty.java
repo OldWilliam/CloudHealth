@@ -74,6 +74,7 @@ public class BodyTemperaAty extends BaseActivity {
         switch (v.getId()) {
             case R.id.bd_temp_chart_bt:
                 Intent i = new Intent(BodyTemperaAty.this, TrendChartAty.class);
+                i.putExtra("datatype", MConfig.TiWen);
                 startActivity(i);
                 break;
             default:
