@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0A0A0A"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/statuBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#0A0A0A"
+            android:text="@string/no_connect"
+            android:textColor="#F7F7F7" />
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0A0A0A"
+            android:textColor="#F7F7F7" />
+
+        <Button
+            android:id="@+id/sync_to_web"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#0A0A0A"
+            android:text="@string/upload"
+            android:textColor="#F7F7F7" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/dataTypeLv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/generalLayout1"
+        android:layout_below="@id/title" >
+    </ListView>
+
+    <include
+        android:id="@+id/generalLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/general_use" />
+
+</RelativeLayout>

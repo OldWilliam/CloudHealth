@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\release\\drawable\\date_button.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\drawable\\date_button.xml"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\release\\drawable\\sync_animation.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\drawable\\sync_animation.xml"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\release\\drawable\\tab_locate_selector.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\drawable\\tab_locate_selector.xml"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\release\\drawable\\tab_setting_test.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\drawable\\tab_setting_test.xml"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\release\\drawable\\border.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\drawable\\border.xml"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_back.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\drawable\\btn_back.xml"
+    },
+    {
+        "merged": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\build\\intermediates\\res\\merged\\release\\drawable\\tab_health_selector.xml",
+        "source": "F:\\Users\\ein.wx\\AndroidStudioProjects\\Health_Community\\app\\src\\main\\res\\drawable\\tab_health_selector.xml"
+    }
+]

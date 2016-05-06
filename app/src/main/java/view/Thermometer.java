@@ -1,6 +1,7 @@
 package view;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -16,6 +17,7 @@ import android.view.View;
 public class Thermometer extends View {
     public static final String TAG = "Thermometer";
 
+    private  Context context;
     private Thermometer.tempCallback tempCallback;
     private int yOrigin;
     private float yAnima;
@@ -23,24 +25,25 @@ public class Thermometer extends View {
 
     public Thermometer(Context context) {
         super(context);
-        init(null, 0);
+        init(null, 0, context);
         Log.d(TAG, "Thermometer: one");
     }
 
     public Thermometer(Context context, AttributeSet attrs) {
         super(context, attrs);
-        init(attrs, 0);
+        init(attrs, 0, context);
         Log.d(TAG, "Thermometer: two");
 
     }
 
     public Thermometer(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        init(attrs, defStyleAttr);
+        init(attrs, defStyleAttr,context);
         Log.d(TAG, "Thermometer: three");
     }
 
-    public void init(AttributeSet attrs, int defStyle) {
+    public void init(AttributeSet attrs, int defStyle, Context context) {
+        this.context = context;
         //刻度值的坐标初始值35摄氏度的y轴坐标
         yOrigin = 640;
         yAnima = yOrigin;

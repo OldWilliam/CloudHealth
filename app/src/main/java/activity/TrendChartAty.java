@@ -16,6 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.health_community.R;
@@ -28,6 +29,8 @@ import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
 
+import adapter.MyXaxisValueFormatter;
+import adapter.MyYAxisValueFormatter;
 import util.MConfig;
 import view.ChartMenuProvider;
 
@@ -38,7 +41,8 @@ public class TrendChartAty extends Activity implements ChartMenuProvider.OnSelec
     private MenuItem totalItem;
 
     private LineChart mLineChart;
-    private LineData mLineData;
+    private LineData mDataOfMonth;
+    private LineData mDataOfYear;
 
     private String charType;
     private String descText;
@@ -97,9 +101,11 @@ public class TrendChartAty extends Activity implements ChartMenuProvider.OnSelec
         //x轴的样式
         XAxis x = mLineChart.getXAxis();
         x.setTextColor(Color.RED);
-//        x.setGridColor(Color.BLUE);
         x.setTextSize(6f);//最小的字体，这样可以缩小x轴刻度值
         x.setSpaceBetweenLabels(0);//就是它！大幅缩小x轴刻度间的距离
+        x.setDrawLabels(true);
+        x.setPosition(XAxis.XAxisPosition.BOTTOM);
+        x.setValueFormatter(new MyXaxisValueFormatter());
 
         //右y轴样式
         YAxis rightAxis = mLineChart.getAxisRight();
@@ -107,7 +113,10 @@ public class TrendChartAty extends Activity implements ChartMenuProvider.OnSelec
 
         //左y轴样式
         YAxis leftAxis = mLineChart.getAxisLeft();
-        leftAxis.setAxisMaxValue(100f);
+        leftAxis.setAxisMaxValue(150f);
+//        leftAxis.setShowOnlyMinMax(true);//只显示0和100
+        leftAxis.setLabelCount(30, true);
+        leftAxis.setValueFormatter(new MyYAxisValueFormatter());//y轴数据单位
 
         //左下角数据标识，用来标识不同类型的数据（legend:图例、传奇、说明、刻印文字）
         //Class representing the legend of the chart.
@@ -121,16 +130,23 @@ public class TrendChartAty extends Activity implements ChartMenuProvider.OnSelec
         //一开始LineChart里面没有LineData,这里返回null
 //        LineData lineData = mLineChart.getLineData();
 
-
-        //初始化数据，x轴为31,最大月数，y轴为空
-        List<String> xValues = new ArrayList<String>();
-        for (int i = 1; i <= 31; i++) {
-            xValues.add(Integer.toString(i));
+        //初始化数据，x轴为12，一年12月
+        List<String> xMonths = new ArrayList<String>();
+        for (int i = 1; i <= 12; i++) {
+            xMonths.add(Integer.toString(i));
         }
-        mLineData = new LineData(xValues);
+        mDataOfYear = new LineData(xMonths);
 
-        mLineChart.setData(mLineData);//选择数据集(数据源包括所有需要显示的值和信息)
+        //初始化数据，x轴为31,一个月最多31，y轴为空
+        List<String> xDays = new ArrayList<String>();
+        for (int i = 1; i <= 31; i++) {
+            xDays.add(Integer.toString(i));
+        }
+        mDataOfMonth = new LineData(xDays);
+
+        mLineChart.setData(mDataOfMonth);//选择数据集(数据源包括所有需要显示的值和信息)
         mLineChart.animateX(20);//图标沿着x轴进行动态刷新
+        mLineChart.getLineData();
     }
 
     private void init() {
@@ -142,13 +158,14 @@ public class TrendChartAty extends Activity implements ChartMenuProvider.OnSelec
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LineDataSet dataSet = loadLineData(20, 100);
-                if (mLineData.getDataSetCount() != 0) {
-                    mLineData.clearValues();
+                LineDataSet dataSet = loadDataSet(20, 100);
+                if (mDataOfMonth.getDataSetCount() != 0) {
+                    mDataOfMonth.clearValues();
                 }
-                mLineData.addDataSet(dataSet);
+                mDataOfMonth.addDataSet(dataSet);
                 mLineChart.notifyDataSetChanged();
                 mLineChart.animateX(20);
+//                mLineChart.invalidate();
             }
         });
     }
@@ -157,7 +174,8 @@ public class TrendChartAty extends Activity implements ChartMenuProvider.OnSelec
      * 	count：the number of the data,xAxis
      * 	range: the range of the data,the max of the YAxis
      */
-    private LineDataSet loadLineData(int count, int range) {
+
+    private LineDataSet loadDataSet(int count, int range) {
         ArrayList<Entry> yValues = new ArrayList<Entry>();//y轴数据集
         for (int i = 0; i < count; i++) {
             float value = (float) (Math.random() * range);

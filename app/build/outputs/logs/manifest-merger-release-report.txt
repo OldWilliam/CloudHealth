@@ -1,0 +1,216 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:2:1-108:12
+	xmlns:android
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:2:11-69
+	package
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:3:5-43
+		INJECTED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml
+uses-sdk
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:22.0.0] F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\AndroidManifest.xml:20:5-43
+MERGED from [cn.aigestudio.datepicker:DatePicker:2.2.0] F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\build\intermediates\exploded-aar\cn.aigestudio.datepicker\DatePicker\2.2.0\AndroidManifest.xml:8:5-10:41
+	android:targetSdkVersion
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:8:9-35
+		INJECTED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.BLUETOOTH
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:11:5-68
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:11:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:12:5-74
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:12:22-71
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:13:5-81
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:13:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:14:5-79
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:14:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:15:5-76
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:15:22-73
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:16:5-79
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:16:22-76
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:17:5-76
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:17:22-73
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:18:5-75
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:18:22-72
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:19:5-81
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:19:22-78
+uses-permission#android.permission.INTERNET
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:20:5-67
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:20:22-64
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:21:5-84
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:21:22-81
+uses-permission#android.permission.READ_LOGS
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:22:5-68
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:22:22-65
+uses-permission#android.permission.RECEIVE_SMS
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:23:5-70
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:23:22-67
+uses-permission#android.permission.READ_SMS
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:24:22-64
+uses-permission#android.permission.VIBRATE
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:25:5-66
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:25:22-63
+application
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:27:5-106:19
+MERGED from [com.android.support:support-v4:22.0.0] F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:31:9-41
+	android:allowBackup
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:29:9-35
+	android:icon
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:30:9-45
+	android:theme
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:32:9-40
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:28:9-49
+activity#activity.LoginAty
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:33:9-41:20
+	android:label
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:35:13-45
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:34:13-45
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:36:13-40:29
+action#android.intent.action.MAIN
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:37:17-69
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:37:25-66
+category#android.intent.category.LAUNCHER
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:39:17-77
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:39:27-74
+activity#activity.HealthActivity
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:42:9-44:47
+	android:theme
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:44:13-44
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:43:13-51
+activity#activity.HealthActivity2
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:45:9-61
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:45:19-58
+activity#activity.XueTangAty
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:46:9-48:47
+	android:theme
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:48:13-44
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:47:13-47
+activity#activity.LocateAty
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:49:9-51:47
+	android:theme
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:51:13-44
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:50:13-46
+activity#activity.SettingAty
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:52:9-56:20
+	android:theme
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:54:13-44
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:53:13-47
+activity#activity.BluetoothDevListAty
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:57:9-61:20
+	android:theme
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:59:13-56
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:58:13-56
+activity#activity.XinDianAty
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:62:9-64:46
+	android:theme
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:64:13-44
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:63:13-47
+activity#activity.XueYangAty
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:66:9-70:20
+	android:theme
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:68:13-44
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:67:13-47
+activity#activity.AirQualityAty
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:71:9-75:20
+	android:theme
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:73:13-44
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:72:13-50
+activity#activity.BodyTemperaAty
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:76:9-78:46
+	android:theme
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:78:13-44
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:77:13-51
+activity#activity.TimeChooseAty
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:80:9-87:20
+	android:theme
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:82:13-56
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:81:13-50
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:84:13-86:60
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:85:17-63
+	android:value
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:86:17-57
+activity#activity.AboutUs
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:89:9-91:46
+	android:theme
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:91:13-44
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:90:13-44
+activity#activity.TrendChartAty
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:93:9-95:46
+	android:theme
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:95:13-44
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:94:13-50
+service#service.ObeserveMessageService
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:98:9-66
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:98:18-63
+service#service.UploadDataService
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:100:9-61
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:100:18-58
+service#com.baidu.location.f
+ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:102:9-105:41
+	android:process
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:105:13-38
+	android:enabled
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:104:13-35
+	android:name
+		ADDED from F:\Users\ein.wx\AndroidStudioProjects\Health_Community\app\src\main\AndroidManifest.xml:103:13-48
